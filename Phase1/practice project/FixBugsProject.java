@@ -99,7 +99,7 @@ public class FixBugsProject {
 	     Scanner sc = new Scanner(System.in);
 	     int input = sc.nextInt();
 	     //Linear Search
-	     for(int i=0;i<len;i++)
+	     for(int i=0;i<len-1;i++)
 	     {
 	         if(arrayList.get(i)==input)
 	         {
