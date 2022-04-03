@@ -35,19 +35,6 @@ public class UserService {
     	return(foundUser.get());
         
     }
-    /*
-    public User GetUserById(int id) {
-    	Optional<User> foundUser = userRepository.findById(id);
-    	
-    	
-    	//TODO: we need to decide how to handle a "Not Found" condition
-    	
-    	if (!foundUser.isPresent()) {
-    		throw new UserNotFoundException();
-    	}
-    	
-    	return(foundUser.get());
-    }*/
     
     public boolean verifyPassword(String username, String password) {
     	boolean verified = false;
@@ -60,10 +47,4 @@ public class UserService {
     	return verified;
     }
     
-    //Do we need this?
-    /*public void UpdateUser(User usertoUpdate) {
-    	userRepository.save(usertoUpdate);
-    }*/
-
-
 }
