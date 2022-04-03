@@ -38,16 +38,6 @@ public class User {
         this.password = password;
     }
 
-//    //Do I need this?
-//    public Integer getId() {
-//        return id;
-//    }
-//    
-//    //Do I need this?
-//    public void setId(Integer id) {
-//        this.id = id;
-//    }
-
     public String getName() {
         return name;
     }
