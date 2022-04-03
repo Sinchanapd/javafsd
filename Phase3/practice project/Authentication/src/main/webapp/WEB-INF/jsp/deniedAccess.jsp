@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<h2 style="text-align: center">Denied Page</h2>
+	<h2 style="text-align: center">Login failed</h2>
 	<br>
 	<br>
 
