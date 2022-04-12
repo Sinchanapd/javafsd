@@ -1,0 +1,285 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  min-height: 80vh;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.budget-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 160px;
+  font-weight: 900;
+}
+
+.budget-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+}
+
+.exp-amount {
+  color: #d41020;
+}
+
+.amount {
+  color: rgb(81, 226, 88);
+}
+
+.col {
+  width: 40%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.col p {
+  font-size: 40px;
+  padding-top: 5px;
+  margin: 0;
+}
+
+
+/* modal form */
+.budget-form {
+  width: 100%;
+  min-height: 200px;
+}
+
+form {
+  margin: 10px 0 20px 10px;
+  min-height: 100px;
+}
+
+input {
+  width: 60%;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: 1px solid gray;
+  margin: 20px 0;
+  padding-left: 5px;
+  color: #495057;
+}
+
+.budget-list .exp p {
+  color: #4d4daf;
+  font-size: 18px;
+}
+
+#displayExpenses {
+  width: 100%;
+  display: none;
+}
+
+.expValue {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#expTitleName {
+  width: 40%;
+}
+
+#expValueAmount {
+  width: 40%;
+}
+
+#edite_delete {
+  width: 40%;
+}
+
+
+#edite_delete button {
+  margin-left: 1px;
+  background: none;
+  border: none;
+}
+
+.budget-form button {
+  background: #db3e7a;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 10px 40px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#bug {
+  font-size: 14px;
+  background: none;
+  color: #4d4daf;
+  margin: 0px 0px 15px 10px;
+  text-align: justify;
+  padding: 0;
+}
+
+#expense-form {
+  width: 100%;
+  display: none;
+}
+
+.toggle {
+  position: absolute;
+  padding-bottom: 100px;
+  right: 0;
+  bottom: 18px;
+}
+
+.toggle button {
+  border: none;
+  border-radius: 600px;
+  background: darkblue;
+  padding: 14px 20px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 10px 50px 0 0;
+  cursor: pointer;
+}
+
+
+.expense-form button {
+  background: #db3e7a;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 10px 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* animation-name: fadeIn;
+  animation-duration: 0.4s; */
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  background-color: #fefefe;
+  width: 50%;
+  min-height: 40px;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  border-bottom: 2px solid gray;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: lightblue;
+  color: darkblue;
+  position: absolute;
+  bottom: 0;
+  width: 99.5%
+}
+
+/* Add Animation */
+@keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

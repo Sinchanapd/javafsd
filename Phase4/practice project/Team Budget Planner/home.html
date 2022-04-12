@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Planner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <ul>
+        <li><a style="font-size: 20px; color: darkblue;" class="active" href="home.html"><b>Budget Planner</b></a></li>
+        <li><a style="padding-top: 20px; color: darkblue;" class="active" href="home.html">Home</a></li>
+    </ul>
+
+    <div class="container">
+
+        <div class="header">
+            <h1><u>Budget Planner App</u></h1>
+        </div>
+
+
+        <div class="budget-section">
+
+            <div class="budget col col-md col-sm">
+                <h2>BUDGET</h2>
+                <img src="image/money-bag.svg" width="40" alt="" />
+                <p class="amount">Rs. <span id="budgetAmount">0</span></p>
+            </div>
+
+            <div class="expenses col col-md col-sm">
+                <h2>EXPENSES</h2>
+                <img src="image/accounting.svg" width="40" alt="" />
+                <p class="exp-amount">Rs. <span id="expensesAmount">0</span></p>
+            </div>
+
+            <div class="balance col col-md col-sm">
+                <h2>BALANCE</h2>
+                <img src="image/law.svg" width="40" alt="" />
+                <p class="amount bala">Rs. <span id="balanceAmount">0</span></p>
+            </div>
+
+        </div>
+
+        <div id="displayExpenses">
+
+            <div class="budget-list">
+
+                <div class="col">
+                    <h4>expense title</h4>
+                </div>
+
+                <div class="col">
+                    <h4>expense value</h4>
+                </div>
+
+                <div class="col"></div>
+            </div>
+
+            <div id="expValue"></div>
+        </div>
+    </div>
+
+
+    <div class="toggle">
+        <button id="myBtn" type="button">+</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Budget Form</h2>
+            </div>
+            <div class="modal-body">
+                <div class="budget-form" id="budgetform">
+                    <form id="addForm">
+                        <label for=""> Make a budget</label> <br />
+                        <input type="number" id="number" /> <br />
+                        <button type="submit">Add Budget</button>
+                    </form>
+                </div>
+            
+
+                <div class="expense-form" id="expense-form">
+                    <form action="" id="expForm">
+                        <div class="">
+                            <label for="">please enter your expense</label> <br />
+                            <input type="text" id="expName" />
+                        </div>
+                        <div class="">
+                            <label for="">please enter expense amount</label> <br />
+                            <input type="number" id="expNumber" />
+                        </div>
+                        <button type="submit" id="submitExpen">Add expense</button>
+                    </form>
+                    <button onclick="callBudget()" id="bug">
+                        Back to add budget ->
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>© 2022 Budget Planner by Sinchana P D </p>
+        </footer>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
