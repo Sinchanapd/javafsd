@@ -1,0 +1,27 @@
+<div class="fixed">
+    <div class="jumbotron" style="background-image: url(https://media.istockphoto.com/photos/question-mark-on-colorful-paper-picture-id1306017915?b=1&k=20&m=1306017915&s=170667a&w=0&h=D_6RqCE1lIYhaU6FsAzvNU11diUxseHVTzCydd23vNY=); 
+    height: 770px; width: 100%; background-size: cover; background-position: center; ">
+        <br>
+        <h1 class="display-5 fw-bold" style="color: darkblue; padding-left: 20px; ">Welcome to Online Quiz App</h1>
+        <br>
+        <p class="col-md-8 fs-4" style="padding-left: 20px;">This Quiz will contain 10 questions. Each question carries
+            1 point. </p>
+        <h4 style="padding-left: 20px;"><u>Rules:</u></h4>
+        <ol>
+            <li>Correct question gives 1 points</li>
+            <li>Incorrect question gives -1 points</li>
+            <li>You will have 60 sec to answer each question</li>
+            <li>Refreshing the page will reset the quiz</li>
+        </ol>
+
+        <form action="">
+            <div class="name col-md-4 my-4" style="padding-left: 20px; ">
+                <label for="" style="color: rgb(235, 76, 76); font-size: x-large;">Enter Your Name:</label>
+                <input #name type="text" name="name" class="form-control" placeholder="Enter name" required />
+                <button style="margin: 20px;" class="btn btn-primary btn-lg" routerLink="/question"
+                    (click)="startQuiz()">Start
+                    the quiz</button>
+            </div>
+        </form>
+    </div>
+</div>
