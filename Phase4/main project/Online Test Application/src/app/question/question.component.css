@@ -1,0 +1,43 @@
+.card, .row{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: darkkhaki;
+    color: darkblue;
+}
+
+.score, .question-remaining , .timer
+{
+    color: darkmagenta;
+}
+
+.question
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.options
+{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal-body
+{
+    background-color: lightblue;
+}
+
+li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+
+li .card:hover{
+    border: 1px solid blue;
+}
+
+ol{
+    padding: 0;
+}

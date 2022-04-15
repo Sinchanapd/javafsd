@@ -1,0 +1,169 @@
+<div class="container mt-5">
+    <div class="card">
+        <div class="d">
+            <div class="quiz-header" style="text-align: center;">
+                <h3 style="font-family: cursive; color: brown; "><b>HTML Quiz</b></h3>
+                <span style="font-style: italic; font-size: x-large; color: darkgreen;">Welcome {{name}}</span>
+            </div>
+        </div>
+        <ng-container *ngIf="!isQuizCompleted">
+            <div class="d-flex justify-content-around py-3">
+                <div class="score">
+                    <h5>{{points}} Points</h5>
+                </div>
+                <div class="question-remaining">
+                    <span style="font-size: large;">Question {{currentQuestion+1}} of {{questionList.length}}</span>
+                </div>
+                <div class="timer">
+                    <h5>{{counter}} sec 🕐</h5>
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                    [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+            <div class="question">
+                <div class="card">
+                    <h3>{{questionList[currentQuestion]?.questionText}}</h3>
+                </div>
+            </div>
+            <div class="options">
+                <ol *ngFor="let option of questionList[currentQuestion]?.options">
+                    <li (click)="answer(currentQuestion+1, option)">
+                        <div appChangeBg [isCorrect]="option.correct" class="card">
+                            {{option.text}}
+                        </div>
+                    </li>
+
+                </ol>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button [disabled]="currentQuestion===0" class="btn" (click)="previousQuestion()"><i
+                        class="fa text-default fa-chevron-left fa-2x" aria-hidden="true"></i></button>
+                <button class="btn" (click)="resetQuiz()"><i class="fa fa-refresh text-default fa-2x"
+                        aria-hidden="true"></i></button>
+                <button class="btn" (click)="nextQuestion()"><i class="fa text-default fa-chevron-right fa-2x"
+                        aria-hidden="true"></i></button>
+            </div>
+        </ng-container>
+       
+
+        <ng-container *ngIf="isQuizCompleted">
+            <div class="row">
+                <div class="result" style="text-align: center;">
+                    <h3 style="font-family: cursive;">Congratulations!! </h3>
+                    <h4 style="color: darkgreen;"><br> You have completed the quiz</h4>
+                    <h4>Below is your result:</h4>
+                    <h4>Total question attempted: {{questionList.length}} </h4>
+                    <h5 style="color: green;">Total Correct Answers: {{correctAnswer}}</h5>
+                    <h5 style="color: red;">Total Wrong Answers: {{inCorrectAnswer}} </h5>
+                    <br>
+                    <h3 style="color: black;"><b>Your Score: {{points}} Points</b> </h3>
+                    <br>
+                </div>
+            </div>
+
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Click here to view the Correct Answers
+            </button>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Correct Answers</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <h5 style="color: blue;">1. What does HTML stand for?</h5>
+                                <h6 style="color: green;">Answer: <b>Hyper Text Markup Language</b></h6>
+                                <h6 style="color: red;">Explanation: <b>HTML stands for HyperText Markup Language</b>
+                                </h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">2. How many sizes of headers are available in HTML by default?
+                                </h5>
+                                <h6 style="color: green;">Answer: <b>6</b></h6>
+                                <h6 style="color: red;">Explanation: <b>6 headers are available in HTML by default
+                                        ranging from h1 to h6</b></h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">3. What is the smallest header in HTML by default?</h5>
+                                <h6 style="color: green;">Answer: <b>h6</b></h6>
+                                <h6 style="color: red;">Explanation: <b>h6 is the smallest header in HTML by default</b>
+                                </h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">4. HTML files are saved by default with the extension?</h5>
+                                <h6 style="color: green;">Answer: <b>.html</b></h6>
+                                <h6 style="color: red;">Explanation: <b>HTML files are saved by the .html or .htm
+                                        extension</b></h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">5. Which of the following is correct about HTML?</h5>
+                                <h6 style="color: green;">Answer: <b>HTML can only use the tags defined within the
+                                        language</b></h6>
+                                <h6 style="color: red;">Explanation: <b>HTML can only use the tags defined within the
+                                        language</b></h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">6. What is meant by an empty tag in HTML?</h5>
+                                <h6 style="color: green;">Answer: <b>An empty tag does not require a closing tag</b>
+                                </h6>
+                                <h6 style="color: red;">Explanation: <b>In HTML, empty tags are those tags that don’t
+                                        require a closing tag for completion</b></h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">7. Which of the following is true about HTML tags?</h5>
+                                <h6 style="color: green;">Answer: <b>Are not case sensitive</b></h6>
+                                <h6 style="color: red;">Explanation: <b>HTML tags are not case-sensitive in nature</b>
+                                </h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">8. What tag is used to render an image on a webpage?</h5>
+                                <h6 style="color: green;">Answer: <b>img</b></h6>
+                                <h6 style="color: red;">Explanation: <b>The img tag is used to display an image on a
+                                        webpage</b></h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">9. Which attribute is used to provide a unique name to an HTML
+                                    element?</h5>
+                                <h6 style="color: green;">Answer: <b>id</b></h6>
+                                <h6 style="color: red;">Explanation: <b>An id is used to provide a unique name for an
+                                        HTML element that can be used to identify it</b></h6>
+                            </div>
+                            <br>
+                            <div>
+                                <h5 style="color: blue;">10. Which property is used to set border colors in HTML?</h5>
+                                <h6 style="color: green;">Answer: <b>border</b></h6>
+                                <h6 style="color: red;">Explanation: <b>The border property is used to change the border
+                                        properties, including color in HTML</b></h6>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+</div>
