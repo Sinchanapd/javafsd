@@ -1,0 +1,194 @@
+{
+    "questions": [
+        {
+            "questionText": "1. What does HTML stand for?",
+            "options": [
+                {
+                    "text": "Hyper Text Markup Language",
+                    "correct": true
+                },
+                {
+                    "text": "Hyperlinks and Text Markup Language"
+                },
+                {
+                    "text": "Home Tool Markup Language"
+                },
+                {
+                    "text": "Hyper Text Markdown Language"
+                }
+            ],
+            "explanation": "HTML stands for HyperText Markup Language"
+        },
+        {
+            "questionText": "2. How many sizes of headers are available in HTML by default?",
+            "options": [
+                {
+                    "text": "5"
+                },
+                {
+                    "text": "1"
+                },
+                {
+                    "text": "3"
+                },
+                {
+                    "text": "6",
+                    "correct": true
+                }
+            ],
+            "explanation": "6 headers are available in HTML by default ranging from h1 to h6"
+        },
+        {
+            "questionText": "3. What is the smallest header in HTML by default?",
+            "options": [
+                {
+                    "text": "h1"
+                },
+                {
+                    "text": "h6",
+                    "correct": true
+                },
+                {
+                    "text": "h2"
+                },
+                {
+                    "text": "h4"
+                }
+            ],
+            "explanation": "h6 is the smallest header in HTML by default"
+        },
+        {
+            "questionText": "4. HTML files are saved by default with the extension?",
+            "options": [
+                {
+                    "text": ".h"
+                },
+                {
+                    "text": ".html",
+                    "correct": true
+                },
+                {
+                    "text": ".ht"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "HTML files are saved by the .html or .htm extension"
+        },
+        {
+            "questionText": "5. Which of the following is correct about HTML?",
+            "options": [
+                {
+                    "text": "HTML uses User Defined Tags"
+                },
+                {
+                    "text": "HTML uses tags defined within the language",
+                    "correct": true
+                },
+                {
+                    "text": "Both A and B"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "HTML can only use the tags defined within the language"
+        },
+        {
+            "questionText": "6. What is meant by an empty tag in HTML?",
+            "options": [
+                {
+                    "text": "There is no such concept of an empty tag in html"
+                },
+                {
+                    "text": "An empty tag does not require a closing tag",
+                    "correct": true
+                },
+                {
+                    "text": "An empty tag cannot have any content within it"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "In HTML, empty tags are those tags that don’t require a closing tag for completion"
+        },
+        {
+            "questionText": "7. Which of the following is true about HTML tags?",
+            "options": [
+                {
+                    "text": "Are case sensitive"
+                },
+                {
+                    "text": "Are not case sensitive",
+                    "correct": true
+                },
+                {
+                    "text": "Are in uppercase"
+                },
+                {
+                    "text": "Are in lowercase"
+                }
+            ],
+            "explanation": "HTML tags are not case-sensitive in nature"
+        },
+        {
+            "questionText": "8. What tag is used to render an image on a webpage?",
+            "options": [
+                {
+                    "text": "img",
+                    "correct": true
+                },
+                {
+                    "text": "src"
+                },
+                {
+                    "text": "image"
+                },
+                {
+                    "text": "ima"
+                }
+            ],
+            "explanation": "The img tag is used to display an image on a webpage"
+        },
+        {
+            "questionText": "9. Which attribute is used to provide a unique name to an HTML element?",
+            "options": [
+                {
+                    "text": "id",
+                    "correct": true
+                },
+                {
+                    "text": "class"
+                },
+                {
+                    "text": "type"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "An id is used to provide a unique name for an HTML element that can be used to identify it"
+        },
+        {
+            "questionText": "10. Which property is used to set border colors in HTML?",
+            "options": [
+                {
+                    "text": "border-color"
+                },
+                {
+                    "text": "border",
+                    "correct": true
+                },
+                {
+                    "text": "Both A and B"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "The border property is used to change the border properties, including color in HTML"
+        }
+    ]
+}
