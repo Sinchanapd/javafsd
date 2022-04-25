@@ -8,7 +8,7 @@ public class WriteOperation {
 	public static void main(String[] args) {
 		try
 		{
-			FileWriter file=new FileWriter("F://Mphasis//Phase1//assignment//test.txt");
+			FileWriter file=new FileWriter("C://Users//HP//Downloads//test.txt");
 			try
 			{
 				file.write("New file created ");
