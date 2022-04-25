@@ -24,7 +24,7 @@ public class ReadFile {
 	  } 
 
 	public static void main(String[] args) {
-		List l = readFileInList("F://Mphasis//assignment//testFile2.txt"); 
+		List l = readFileInList("C://Users//HP//Downloads//testFile2.txt"); 
 		  
 	    Iterator<String> itr = l.iterator(); 
 	    while (itr.hasNext()) 
