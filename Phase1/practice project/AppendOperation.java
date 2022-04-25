@@ -8,7 +8,7 @@ public class AppendOperation {
 	public static void main(String[] args) {
 		try
 		{
-			FileWriter file=new FileWriter("F://Mphasis//Phase1//assignment//test.txt",true);
+			FileWriter file=new FileWriter("C://Users//HP//Downloads//test.txt",true);
 			file.write("Appending some data");
 			file.close();
 			System.out.println("Append operation successful");
