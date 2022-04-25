@@ -8,7 +8,7 @@ public class ReadOperation {
 	public static void main(String[] args) {
 		try
 		{
-			FileReader r=new FileReader("F://Mphasis//Phase1//assignment//test.txt");
+			FileReader r=new FileReader("C://Users//HP//Downloads//test.txt");
 			try
 			{
 				int ch;
