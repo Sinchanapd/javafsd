@@ -23,5 +23,6 @@ public class WriteOperation {
 		{
 			System.out.println(e);
 		}
+
 	}
 }
