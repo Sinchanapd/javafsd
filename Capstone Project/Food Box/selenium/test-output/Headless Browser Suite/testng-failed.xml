@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Headless Browser Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome Testing(failed)">
+    <parameter name="browserType" value="chrome headless"/>
+    <classes>
+      <class name="org.yokekhei.fsd.capstone.selenium.UserRegisterTests">
+        <methods>
+          <include name="testRegisterSuccess"/>
+          <include name="launchBrowser" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.UserRegisterTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.UserCategoryTests">
+        <methods>
+          <include name="launchBrowser" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="testCategoryCatalogSuccess"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.UserCategoryTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.AdminLogoutTests">
+        <methods>
+          <include name="launchBrowser" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.AdminLogoutTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.AdminCategoryTests">
+        <methods>
+          <include name="launchBrowser" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="testListCategorySuccess"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.AdminCategoryTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.AdminLoginTests">
+        <methods>
+          <include name="launchBrowser" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="testLoginSuccess"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.AdminLoginTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.UserLogoutTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.UserLogoutTests -->
+    </classes>
+  </test> <!-- Chrome Testing(failed) -->
+  <test thread-count="5" parallel="tests" name="Firefox Testing(failed)">
+    <parameter name="browserType" value="firefox headless"/>
+    <classes>
+      <class name="org.yokekhei.fsd.capstone.selenium.UserRegisterTests">
+        <methods>
+          <include name="testRegisterSuccess" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.UserRegisterTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.UserCategoryTests">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="testCategoryCatalogSuccess" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.UserCategoryTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.UserLoginTests">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="testLoginSuccess"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.UserLoginTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.AdminCategoryTests">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="testListCategorySuccess"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.AdminCategoryTests -->
+      <class name="org.yokekhei.fsd.capstone.selenium.AdminLoginTests">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="testLoginSuccess"/>
+        </methods>
+      </class> <!-- org.yokekhei.fsd.capstone.selenium.AdminLoginTests -->
+    </classes>
+  </test> <!-- Firefox Testing(failed) -->
+</suite> <!-- Failed suite [Headless Browser Suite] -->
